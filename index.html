@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	</head>
+	<body ng-app>
+		<div class="container" data-ng-init="names=['ajit','dadresa','dudapur']">
+            Name:
+            <br />
+            <input type="text" ng-model="name" />
+            {{name}}
+            <br />
+            <ul>
+                <li data-ng-repeat="myname in names">{{myname}}</li>
+            </ul>
+        </div>
+	</body>
+</html>
